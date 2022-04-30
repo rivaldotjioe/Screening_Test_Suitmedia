@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Screening Test Suitmedia</string>
+    <string name="welcome">Welcome</string>
+    <string name="subtitle_test">This is app for suitmedia mobile developer test</string>
+    <string name="type_name_here">Type name here</string>
+    <string name="type_text_palindrome">Type text palindrome</string>
+    <string name="next">Next</string>
+    <string name="check">Check</string>
+    <string name="copyright">Copyright © 2020 Suitmedia All Rights Reserved.</string>
+    <string name="hallo">Hallo,</string>
+    <string name="nama">Rivaldo!</string>
+    <string name="choose_event">Choose Event</string>
+    <string name="choose_guest">Choose Guest</string>
+</resources>
