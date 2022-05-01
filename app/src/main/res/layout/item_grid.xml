@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/image_guest"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/img_profile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtUserName"
+        style="@style/TitleTextBlack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/john_doe"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_guest"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

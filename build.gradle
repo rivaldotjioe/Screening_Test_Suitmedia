@@ -8,3 +8,9 @@ plugins {
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
+
+ext {
+    roomVersion = '2.2.1'
+    hiltAndroidXVersion = '1.0.0-alpha02'
+    hiltVersion = '2.28.3-alpha'
+}

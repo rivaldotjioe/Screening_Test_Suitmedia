@@ -1,11 +1,10 @@
-package com.rivaldo.screeningtestsuitmedia
+package com.rivaldo.screeningtestsuitmedia.activity
 
 import android.content.Context
 import android.content.Intent
 import android.graphics.Bitmap
 import android.graphics.BitmapFactory
 import android.media.MediaScannerConnection
-import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Environment
@@ -13,9 +12,10 @@ import android.provider.MediaStore
 import android.util.Log
 import android.view.View
 import android.widget.Toast
-import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AlertDialog
 import com.google.android.material.textfield.TextInputEditText
+import com.rivaldo.screeningtestsuitmedia.utils.CommonUtil
+import com.rivaldo.screeningtestsuitmedia.R
 import com.rivaldo.screeningtestsuitmedia.databinding.ActivityMainBinding
 import java.io.ByteArrayOutputStream
 import java.io.File
@@ -98,7 +98,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             R.id.btnNext -> {
                 if (binding.editTextName.validate("Please enter a valid name", { it.isValidName() }) &&
                     binding.editTextPalindrome.validate("Please enter a word",{it.isNotEmpty()})) {
-                        CommonUtil.saveSharedPrefs(this, NAMES, binding.editTextName.text.toString())
+                    CommonUtil.saveSharedPrefs(this, NAMES, binding.editTextName.text.toString())
                     imageBitmap?.let { saveImageOnly(it) }
                     Toast.makeText(this, "Data Saved", Toast.LENGTH_SHORT).show()
                     val intent = Intent(this, Screen2Activity::class.java)

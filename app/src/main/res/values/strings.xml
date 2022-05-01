@@ -11,4 +11,11 @@
     <string name="nama">Rivaldo!</string>
     <string name="choose_event">Choose Event</string>
     <string name="choose_guest">Choose Guest</string>
+    <string name="search">Search</string>
+    <string name="maps">Maps</string>
+    <string name="card_title">Card Title</string>
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</string>
+    <string name="_15_jan_2021">15 Jan 2021</string>
+    <string name="_9_00_am">9:00 AM</string>
+    <string name="john_doe">John Doe</string>
 </resources>
