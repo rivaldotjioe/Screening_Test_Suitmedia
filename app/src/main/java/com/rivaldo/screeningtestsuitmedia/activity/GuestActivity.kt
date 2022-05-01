@@ -29,7 +29,7 @@ class GuestActivity : AppCompatActivity(), SwipeRefreshLayout.OnRefreshListener 
     private var page = 1
     private var totalPage = 1
     private var isLoading = false
-    private lateinit var selectedGuest : String
+    private var selectedGuest : String? = null
     private var loading = MutableLiveData<Boolean>()
     private var swipeLoad = MutableLiveData<Boolean>()
 
@@ -76,7 +76,7 @@ class GuestActivity : AppCompatActivity(), SwipeRefreshLayout.OnRefreshListener 
 
     private fun sendIntentToPreviousActivity(){
         val intent = Intent()
-        if (selectedGuest.isNotEmpty()){
+        if (selectedGuest != null){
             intent.putExtra(CommonUtil.GUEST_BUTTON, selectedGuest)
             setResult(RESULT_OK, intent)
         } else {

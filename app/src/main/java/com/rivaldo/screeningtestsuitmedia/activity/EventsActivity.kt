@@ -17,7 +17,7 @@ import com.rivaldo.screeningtestsuitmedia.utils.CommonUtil
 class EventsActivity : AppCompatActivity() {
     var binding : ActivityEventsBinding? = null
     var bindingScreen2 : ActivityScreen2Binding? = null
-    private lateinit var selectedEvent : String
+    private var selectedEvent : String? = null
     private lateinit var eventsAdapter : EventsAdapter
     override fun onCreate(savedInstanceState: Bundle?) {
         binding = ActivityEventsBinding.inflate(layoutInflater)
@@ -60,7 +60,7 @@ class EventsActivity : AppCompatActivity() {
 
     private fun sendIntentToPreviousActivity(){
         val intent = Intent()
-        if (selectedEvent.isNotEmpty()){
+        if (selectedEvent != null){
             intent.putExtra(CommonUtil.EVENT_BUTTON, selectedEvent)
             setResult(RESULT_OK, intent)
         } else {
